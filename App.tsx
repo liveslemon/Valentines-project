@@ -385,14 +385,14 @@ const App: React.FC = () => {
                     className="relative w-full"
                   >
                     {/* Ancient Paper Texture */}
-                    <div className="bg-[#f4e4bc] p-8 md:p-10 rounded-sm shadow-2xl transform rotate-1 border border-[#e6d2a0] relative overflow-hidden max-h-[75vh] flex flex-col items-center w-full">
+                    <div className="bg-[#f4e4bc] p-6 md:p-10 rounded-sm shadow-2xl transform rotate-1 border border-[#e6d2a0] relative max-h-[75vh] flex flex-col items-center w-full overflow-y-auto no-scrollbar">
                       {/* Grain Texture Overlay */}
                       <div className="absolute inset-0 opacity-[0.5] bg-[url('https://www.transparenttextures.com/patterns/cream-paper.png')] pointer-events-none mix-blend-multiply"></div>
                       <div className="absolute inset-0 opacity-[0.2] bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-amber-100 to-amber-900 pointer-events-none"></div>
                       
                       <h2 className="text-4xl text-[#5c3a21] mb-6 text-center z-10 font-bold" style={{ fontFamily: 'Great Vibes, cursive' }}>Hey Mama,</h2>
                       
-                      <div className="space-y-4 text-[#4a3728] text-lg md:text-xl leading-relaxed text-center font-handwriting font-semibold opacity-90 z-10">
+                      <div className="space-y-3 text-[#4a3728] text-lg md:text-xl leading-relaxed text-center font-handwriting font-semibold opacity-90 z-10">
                         <p>Being with you has brought a kind of peace I didn't know I needed.</p>
                         <p>I can't believe it was a year ago I was not sure if you'd say yes or not.</p>
                         <p>Thank you for your constant reassurances, for making me feel so safe, and for understanding me even without words.</p>
@@ -404,11 +404,11 @@ const App: React.FC = () => {
                       </div>
 
                       {/* Quill Pen Decoration */}
-                      <div className="absolute bottom-10 right-4 z-10 opacity-80 pointer-events-none transform rotate-[15deg] drop-shadow-md">
+                      <div className="absolute bottom-10 right-4 z-0 opacity-80 pointer-events-none transform rotate-[15deg] drop-shadow-md">
                         <Feather className="w-24 h-24 text-ink stroke-1" fill="rgba(74, 55, 40, 0.2)" />
                       </div>
 
-                      <div className="mt-8 flex justify-center w-full z-10">
+                      <div className="mt-8 pb-4 flex justify-center w-full z-10">
                         <Button onClick={handleLetterContinue} variant="lavender" className="px-8 text-sm shadow-none bg-[#8b5e3c] hover:bg-[#6d4a2f] text-amber-50">
                           One last thing... <Sparkles className="w-4 h-4" />
                         </Button>
